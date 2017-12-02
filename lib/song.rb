@@ -51,5 +51,6 @@ class Song
         count_artist[t] += 1
       end
     end
+    return count_artist
   end
 end
