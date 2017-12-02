@@ -48,5 +48,6 @@ class Song
       else
         count_artist[t] += 1
       end
+    end
   end
-end
+end 
