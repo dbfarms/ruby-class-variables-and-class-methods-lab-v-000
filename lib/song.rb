@@ -20,17 +20,17 @@ class Song
     return @@count
   end
 
-  def genres
+  def self.genres
     @@genres.unique!
     return @@genres
   end
 
-  def artists
+  def self.artists
     @@artists.unique!
     return @@artists
   end
 
-  def genre_count
+  def self.genre_count
     count_genre = {}
     @@genres.each do |r|
       if count_genre[r] == nil
@@ -42,7 +42,7 @@ class Song
     return count_genre
   end
 
-  def artist_count
+  def self.artist_count
     count_artist = {}
     @@artists.each do |t|
       if count_artist[r] == nil
