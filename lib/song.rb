@@ -24,7 +24,8 @@ class Song
   end
 
   def artists
-
+    @@artists.unique!
+    return @@artists
   end
 
   def genre_count
