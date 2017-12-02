@@ -46,7 +46,7 @@ class Song
     count_artist = {}
     @@artists.each do |t|
       if count_artist[t] == nil
-        count_artist[t] = 0
+        count_artist = {t => 0}
       else
         count_artist[t] += 1
       end
